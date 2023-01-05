@@ -29,9 +29,6 @@ public class PackageExplorer {
 		return t;
 	}
 	
-	/*
-	 * autre solution à base de ClassLoader
-	 */
 	
 }
 	

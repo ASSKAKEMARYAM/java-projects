@@ -10,8 +10,13 @@ import java.util.Vector;
 public class ClassParser {
 	
 	private Class<?> targetClass;
-
+	 private PackageExplorer pe =new PackageExplorer();
+	private String [] T ;
+	private String PackageName = "org.mql.java.annotations";
+ 
 	public ClassParser() {
+		T=pe.getClassList(null);
+		
 		try {
 			this.targetClass = Class.forName("org.mql.java.models.Author");
 		} catch (ClassNotFoundException e) {}
